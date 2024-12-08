@@ -35,7 +35,7 @@
 │
 ├ Vulnérabilité et Sécurité
 │
-├ Doxing et Suivi d'Informations
+├ Suivi d'Informations (Osint)
 │
 ├ Gestion des Mots de Passe
 │
@@ -55,7 +55,7 @@
 <h1>⚙️・Fonctions principales :</h1>
 
 ```
-┌── ⚒️ - Titan MultiTool
+┌── ⚒️ - HackGuard
 │   ├── Settings
 │   ├── Tool-Info
 │   └── Tool-Websites
@@ -70,8 +70,7 @@
 │   └── Ip-Pinger
 │
 ├── 🔎 - Osint
-│   ├── Dox-Create
-│   ├── Dox-Tracker-(Osint)
+│   ├── have-i-been-pwned
 │   ├── Username-Tracker
 │   ├── Email-Tracker
 │   ├── Email-Info
@@ -79,64 +78,18 @@
 │   └── Ip-Info
 │
 ├── 🔧 - Utilities
-│   ├── Phishing-Attack
 │   ├── Password-Encrypted
 │   ├── Password-Decrypted
 │   ├── Password-Checker
 │   ├── Password-Generator
 │   ├── Password-Generator-(Random)
 │   ├── Search-In-DataBase
-│   ├── Ip-Generator
-│   └── Dark-Web-Links
-│
-├── ☠️ - Virus Builder
-│   ├── Obfuscator
-│   ├── Virus-Builder
-│   ├── RAT-Builder
-│   ├── Archive-Cracker
-│   └── SMB-Cracker
-│
-├── 📞 - Discord Tools
-│   ├── Token Discord
-│   │   ├── Discord-Token-Info
-│   │   ├── Discord-Token-Nuker
-│   │   ├── Discord-Token-Joiner
-│   │   ├── Discord-Token-Leaver
-│   │   ├── Discord-Token-Login
-│   │   ├── Discord-Token-To-Id-And-Brute
-│   │   ├── Discord-Token-Server-Raid
-│   │   ├── Discord-Token-Spammer
-│   │   ├── Discord-Token-Delete-Friends
-│   │   ├── Discord-Token-Block-Friends
-│   │   ├── Discord-Token-Mass-Dm
-│   │   ├── Discord-Token-Delete-Dm
-│   │   ├── Discord-Token-Status-Changer
-│   │   ├── Discord-Token-Language-Changer
-│   │   ├── Discord-Token-House-Changer
-│   │   ├── Discord-Token-Theme-Changer
-│   │   └── Discord-Token-Generator
-│   │
-│   ├── Bot Discord
-│   │   ├── Discord-Bot-Server-Backup
-│   │   ├── Discord-Bot-Server-Nuker
-│   │   ├── Discord-Bot-Server-Invite
-│   │   └── Discord-Bot-Id-to-Invite
-│   │
-│   ├── Webhook Discord
-│   │   ├── Discord-Webhook-Info
-│   │   ├── Discord-Webhook-Delete
-│   │   ├── Discord-Webhook-Spammer
-│   │   └── Discord-Webhook-Generator
-│   │
-│   ├── Discord-Server-Info
-│   └── Discord-Nitro-Generator
+│   └── Ip-Generator
 │
 ├── 🎮 - Roblox Tools
-│   ├── Roblox-Cookie-Login
 │   ├── Roblox-Cookie-Info
 │   ├── Roblox-User-Info
-│   ├── Roblox-Id-Info
-│   └── Roblox-Robux-Generator
+│   └── Roblox-Id-Info
 │
 ├── 🗂️ - File Tools
 │   ├── File-Encryptor
@@ -144,18 +97,6 @@
 │   ├── File-Converter
 │   └── File-Scanner
 │
-├── 📥 - Downloaders
-│   ├── Facebook-Downloader
-│   ├── Youtube-Downloader
-│   ├── TikTok-Downloader
-│   ├── Site-Downloader
-│   └── TikTok-Views
-│
-├── 🛠️ - Miscellaneous
-│   ├── Steganography
-│   ├── Metadata
-│   ├── Spoofer
-│   └── Winrar-Premium
 │
 └── 💻 - System Tools
     └── Get-Your-Ip
@@ -167,8 +108,6 @@
 
 ```
 Amélioration de la traduction : Perfectionnement de la traduction et personnalisation du Tool.
-Améliorations du Virus et RAT Builder : Ajout de nouvelles fonctionnalités pour le rat builder, amélioration de l'interface et du fonctionnement du rat.
-Nouveau Tool : Tiktok Views qui permet d'automatiser l'ajout de vues tiktok par zefoy, a chaque fin de compteur cela va redemander des vues automatiquement.
 Quelques Améliorations supplémentaires.
 ```
 
@@ -212,6 +151,6 @@ Or
 
 <p>
   - <a href="https://discord.gg/Tqe2vgrY9p">Discord</a><br>
-  - Createur: Potopilo<br>
+  - Createur: Potopilo and h4 777<br>
   - Version: 1.0
 </p>
