@@ -1,7 +1,7 @@
 <img align="center" src="Img/Titan.png" width="100%">
 
 <p>
-  <h3 align="center">⭐ HackGuard 1.0 ⭐</h3>
+  <h3 align="center">⭐ HackGuard 1.0 (SOON)!⭐</h3>
 </p>
 
 <h1>📜・Description:</h1>
