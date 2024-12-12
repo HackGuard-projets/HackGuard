@@ -1,112 +1,87 @@
-import requests
-import socket
-import whois
-import dns.resolver
-import nmap
+import subprocess
+import os
 from colorama import Fore, Style, init
 
 init(autoreset=True)
 
-def scan_url(url):
-    try:
-        response = requests.get(url)
-        return response.status_code, response.headers
-    except Exception as e:
-        return str(e), None
+def clear_console():
+    os.system('cls' if os.name == 'nt' else 'clear')
 
-def ip_detect(url):
-    try:
-        ip_address = socket.gethostbyname(url)
-        return ip_address
-    except Exception as e:
-        return str(e)
-
-def port_scanner(ip):
-    nm = nmap.PortScanner()
-    nm.scan(ip, '1-1024')  # Scan ports 1 to 1024
-    return nm[ip]['tcp']
-
-def dns_lookup(url):
-    try:
-        result = dns.resolver.resolve(url, 'A')
-        return [ip.address for ip in result]
-    except Exception as e:
-        return str(e)
-
-def whois_lookup(url):
-    try:
-        domain_info = whois.whois(url)
-        return domain_info
-    except Exception as e:
-        return str(e)
-
-def display_menu():
-    print(Fore.GREEN + "\n--- Menu Principal ---")
-    print(Fore.CYAN + "[1] Scan URL")
-    print(Fore.CYAN + "[2] Détection IP")
-    print(Fore.CYAN + "[3] Scanner de ports")
-    print(Fore.CYAN + "[4] Recherche DNS")
-    print(Fore.CYAN + "[5] Recherche Whois")
-    print(Fore.CYAN + "[7] Credits")
-    print(Fore.CYAN + "[6] Quitter")
-    print(Style.RESET_ALL)
+def display_main_menu():
+    print(Fore.MAGENTA + r"""
+                                      _    _            _     _____                     _ 
+                                     | |  | |          | |   / ____|                   | |
+                                     | |__| | __ _  ___| | _| |  __ _   _  __ _ _ __ __| |
+                                     |  __  |/ _` |/ __| |/ / | |_ | | | |/ _` | '__/ _` |
+                                     | |  | | (_| | (__|   <| |__| | |_| | (_| | | | (_| |
+                                     |_|  |_|\__,_|\___|_|\_\\_____|\__,_|\__,_|_|  \__,_|(By potopilo)
+ 
+ ├─ Back  (B)┌─────────────────┐                        ┌───────┐                           ┌───────────┐   Next (N) │
+ └─┬─────────┤ Network Scanner ├─────────┬──────────────┤ Osint ├──────────────┬────────────┤ Utilities ├────────────┴─
+   │         └─────────────────┘         │              └───────┘              │            └───────────┘
+   ├─ [1] Web scanner                    ├─ [9] have-i-been-pwned              ├─ [15] Password-Encrypted
+   ├─ [2] Sql-Vulnerability              ├─ [10] Username-Tracker              ├─ [16] Password-Decrypted
+   ├─ [3] Website-Info-Scanner           ├─ [11] Email-Tracker                 ├─ [17] Password-Checker
+   ├─ [4] Website-Url-Scanner            ├─ [12] Email-Info                    ├─ [18] Password-Generator
+   ├─ [5] URL-Checker                    ├─ [13] Number-Info                   ├─ [19] Password-Generator-(Random)
+   ├─ [6] Ip-Scanner                     └─ [14] Ip-Info                       ├─ [20] Search-In-DataBase
+   ├─ [7] Ip-Port-Scanner                                                      ├─ [21] Ip-Generator
+   └─ [8] Ip-Pinger                                                            └─ [0] Leave the tools
+"""+ Style.RESET_ALL)
 
 
+def display_next_menu():
+    print(Fore.MAGENTA + r"""
+
+                                      _    _            _     _____                     _ 
+                                     | |  | |          | |   / ____|                   | |
+                                     | |__| | __ _  ___| | _| |  __ _   _  __ _ _ __ __| |
+                                     |  __  |/ _` |/ __| |/ / | |_ | | | |/ _` | '__/ _` |
+                                     | |  | | (_| | (__|   <| |__| | |_| | (_| | | | (_| |
+                                     |_|  |_|\__,_|\___|_|\_\\_____|\__,_|\__,_|_|  \__,_|(By potopilo)
+
+ ├─ Back  (B)┌──────────────┐                        ┌────────────┐                           ┌──────────────┐   Next (N) │
+ └─┬─────────┤ Roblox Tools ├─────────┬──────────────┤ File Tools ├──────────────┬────────────┤ System Tools ├────────────┴─
+   │         └──────────────┘         │              └────────────┘              │            └──────────────┘
+   ├─ [22] Roblox-Cookie-Info         ├─ [25] File-Encryptor                     ├─ [29] Get-Your-Ip
+   ├─ [23] Roblox-User-Info           ├─ [26] File-Decryptor                     └─ [0] Leave the tools
+   └─ [24] Roblox-Id-Info             ├─ [27] File-Converter                    
+                                      └─ [28] File-Scanner                       
+
+"""+ Style.RESET_ALL)
 
 def main():
-    print(Fore.MAGENTA + r"""
-  _    _            _     _____                     _ 
- | |  | |          | |   / ____|                   | |
- | |__| | __ _  ___| | _| |  __ _   _  __ _ _ __ __| |
- |  __  |/ _` |/ __| |/ / | |_ | | | |/ _` | '__/ _` |
- | |  | | (_| | (__|   <| |__| | |_| | (_| | | | (_| |
- |_|  |_|\__,_|\___|_|\_\\_____|\__,_|\__,_|_|  \__,_|
-""" + Style.RESET_ALL)
+    current_menu = 'main'
 
     while True:
-        display_menu()
-        choice = input(Fore.YELLOW + "Choisissez une option (1-6) : " + Style.RESET_ALL)
+        if current_menu == 'main':
+            display_main_menu()
+            choice = input(Fore.YELLOW + "Choisissez une option (1-21, N pour Next, B pour Back) : " + Style.RESET_ALL)
 
-        if choice == '1':
-            url = input(Fore.YELLOW + "Entrez l'URL ou le domaine à analyser : " + Style.RESET_ALL)
-            status_code, headers = scan_url(url)
-            print(Fore.GREEN + f"Code de statut : {status_code}")
-            print(Fore.GREEN + f"En-têtes : {headers}")
+            if choice == 'N' or choice.lower() == 'n':
+                current_menu = 'next'
+            elif choice == 'B' or choice.lower() == 'b':
+                print(Fore.RED + "Vous êtes déjà dans le menu principal.")
+            elif choice == '0':
+                print(Fore.RED + "Au revoir!")       
+                break
+            elif choice in [str(i) for i in range(1, 30)]:  # Vérifie si le choix est entre 1 et 29
+                subprocess.run(["python", os.path.join(os.path.dirname(__file__), "spring", f"tool_{choice}.py")])
+            else:
+                print(Fore.GREEN + "Choix invalide. Veuillez entrer un nombre entre 1 et 29.")            
 
-        elif choice == '2':
-            url = input(Fore.YELLOW + "Entrez l'URL ou le domaine à analyser : " + Style.RESET_ALL)
-            ip_address = ip_detect(url)
-            print(Fore.GREEN + f"Adresse IP : {ip_address}")
+        elif current_menu == 'next':
+            display_next_menu()
+            choice = input(Fore.YELLOW + "Choisissez une option (22-29, 0 pour Back) : " + Style.RESET_ALL)
 
-        elif choice == '3':
-            url = input(Fore.YELLOW + "Entrez l'URL ou le domaine à analyser : " + Style.RESET_ALL)
-            ip_address = ip_detect(url)
-            ports = port_scanner(ip_address)
-            print(Fore.GREEN + f"Ports ouverts : {ports}")
-
-        elif choice == '4':
-            url = input(Fore.YELLOW + "Entrez l'URL ou le domaine à analyser : " + Style.RESET_ALL)
-            dns_records = dns_lookup(url)
-            print(Fore.GREEN + f"Enregistrements DNS : {dns_records}")
-
-        elif choice == '5':
-            url = input(Fore.YELLOW + "Entrez l'URL ou le domaine à analyser : " + Style.RESET_ALL)
-            whois_info = whois_lookup(url)
-            print(Fore.GREEN + f"Informations Whois : {whois_info}")
-
-        elif choice == '6':
-            print(Fore.RED + "Au revoir!")
-            break
-
-        elif choice == '7':
-            print(Fore.CYAN + """
-            Tools by potopilo 
-            Version 1.0
-            
-            """)
-
-        else:
-            print(Fore.RED + "Choix invalide, veuillez réessayer.")
+            if choice == 'B' or choice.lower() == 'b':
+                current_menu = 'main'
+            elif choice == '0':
+                current_menu = 'main'
+            elif choice in [str(i) for i in range(22, 30)]:  # Vérifie si le choix est entre 22 et 29
+                subprocess.run(["python", os.path.join(os.path.dirname(__file__), "spring", f"tool_{choice}.py")])
+            else:
+                print(Fore.GREEN + "Choix invalide. Veuillez entrer un nombre entre 22 et 29.")
 
 if __name__ == "__main__":
     main()
