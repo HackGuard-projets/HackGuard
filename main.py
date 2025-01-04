@@ -67,7 +67,7 @@ def main():
             elif choice == '0':
                 print(Fore.RED + "Au revoir!")       
                 break
-            elif choice in [str(i) for i in range(1, 30)]:  # Vérifie si le choix est entre 1 et 29
+            elif choice in [str(i) for i in range(1, 30)]: 
                 subprocess.run(["python", os.path.join(os.path.dirname(__file__), "spring", f"tool_{choice}.py")])
             else:
                 print(Fore.GREEN + "Choix invalide. Veuillez entrer un nombre entre 1 et 29.")            
@@ -80,7 +80,7 @@ def main():
                 current_menu = 'main'
             elif choice == '0':
                 current_menu = 'main'
-            elif choice in [str(i) for i in range(22, 30)]:  # Vérifie si le choix est entre 22 et 29
+            elif choice in [str(i) for i in range(22, 30)]:  
                 subprocess.run(["python", os.path.join(os.path.dirname(__file__), "spring", f"tool_{choice}.py")])
             else:
                 print(Fore.GREEN + "Choix invalide. Veuillez entrer un nombre entre 22 et 29.")
