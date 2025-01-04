@@ -8,6 +8,7 @@ def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def display_main_menu():
+    clear_console()
     print(Fore.MAGENTA + r"""
                                       _    _            _     _____                     _ 
                                      | |  | |          | |   / ____|                   | |
@@ -31,6 +32,7 @@ def display_main_menu():
 
 
 def display_next_menu():
+    clear_console()
     print(Fore.MAGENTA + r"""
 
                                       _    _            _     _____                     _ 
