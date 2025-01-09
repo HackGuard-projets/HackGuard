@@ -4,7 +4,6 @@
   <h3 align="center">⭐ HackGuard 1.0 (SOON)!⭐</h3>
 </p>
 
-<img src="img/fili.png" width="49%">
 <h1>📜・Description:</h1>
 
 	HackGuard est une boîte à outils polyvalente et puissante, conçue pour améliorer votre productivité en développement, gestion de projets, et sécurité informatique. Développée par potopilo, cette suite d'outils vous offre 29 fonctionnalités différentes pour simplifier vos tâches quotidiennes. Que vous soyez développeur, administrateur système ou un passionné de technologie, HackGuard est votre allié incontournable.
@@ -20,7 +19,7 @@
   🔄 -> <strong>Mises à jour fréquentes</strong>.<br>
   💰 -> <strong>Entièrement gratuit</strong> pour tous.<br>
 </p>
-  <img src="img/R.jpg" width="49%">
+<img src="img/fili.png" width="49%">
 <h1>⭐・Features: </h1>
 
 <p>	
