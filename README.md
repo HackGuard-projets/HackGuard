@@ -1,5 +1,3 @@
-<img align="center" src="Img/Titan.png" width="100%">
-
 <p>
   <h3 align="center">⭐ HackGuard 1.0 (SOON)!⭐</h3>
 </p>
@@ -23,6 +21,8 @@
 <h1>⭐・Features: </h1>
 
 <p>
+
+  <img src="img/R.png" width="49%">	
   <h3 align="center">HackGuard vous offre une large gamme de fonctionnalités réparties en différentes catégories :</h3>
 </p>
 
@@ -151,6 +151,6 @@ Or
 
 <p>
   - <a href="https://discord.gg/Tqe2vgrY9p">Discord</a><br>
-  - Createur: Potopilo and h4 777<br>
+  - Createur: Potopilo<br>
   - Version: 1.0
 </p>
