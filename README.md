@@ -1,12 +1,7 @@
 <p>
   <h3 align="center">⭐ HackGuard 1.0 (SOON)!⭐</h3>
 </p>
-<p align="center">
-  <img src="https://img.shields.io/github/v/release/fluzyteck/RedTiger-Tools?label=Version&color=a80505">
-  <img src="https://img.shields.io/github/stars/fluzyteck/RedTiger-tools?style=flat&label=Stars&color=a80505">
-  <img src="https://img.shields.io/github/repo-size/fluzyteck/RedTiger-Tools?label=Size&color=a80505">
-  <img src="https://img.shields.io/github/languages/top/fluzyteck/RedTiger-Tools?color=a80505">
-</p>
+
 
 <h1>📜・Description:</h1>
 
