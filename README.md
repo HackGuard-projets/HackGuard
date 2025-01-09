@@ -20,7 +20,7 @@
   💰 -> <strong>Entièrement gratuit</strong> pour tous.<br>
 </p>
    <img src="img/R.jpg" width="49%">
-   <img src="img/M1.JPG" width="49%">
+   <img src="img/M2.JPG" width="49%">
 <h1>⭐・Features: </h1>
 
 <p>	
