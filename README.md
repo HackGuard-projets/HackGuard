@@ -17,12 +17,10 @@
   🔄 -> <strong>Mises à jour fréquentes</strong>.<br>
   💰 -> <strong>Entièrement gratuit</strong> pour tous.<br>
 </p>
-
+  <img src="img/R.jpg" width="49%">
 <h1>⭐・Features: </h1>
 
-<p>
-
-  <img src="img/R.jpg" width="49%">	
+<p>	
   <h3 align="center">HackGuard vous offre une large gamme de fonctionnalités réparties en différentes catégories :</h3>
 </p>
 
