@@ -46,7 +46,7 @@ def display_next_menu():
  └─┬─────────┤ Roblox Tools ├─────────┬──────────────┤ File Tools ├──────────────┬────────────┤ System Tools ├────────────┴─
    │         └──────────────┘         │              └────────────┘              │            └──────────────┘
    ├─ [22] Roblox-Cookie-Info         ├─ [25] File-Encryptor                     ├─ [29] Get-Your-Ip
-   ├─ [23] Roblox-User-Info           ├─ [26] File-Decryptor                     └─ [0] Leave the tools
+   ├─ [23] Roblox-User -Info           ├─ [26] File-Decryptor                     └─ [0] Leave the tools
    └─ [24] Roblox-Id-Info             ├─ [27] File-Converter                    
                                       └─ [28] File-Scanner                       
 
@@ -58,23 +58,23 @@ def main():
     while True:
         if current_menu == 'main':
             display_main_menu()
-            choice = input(Fore.YELLOW + "Choisissez une option (1-21, N pour Next, B pour Back) : " + Style.RESET_ALL)
+            choice = input(Fore.YELLOW + "Choose an option (1-21, N for Next, B for Back): " + Style.RESET_ALL)
 
             if choice == 'N' or choice.lower() == 'n':
                 current_menu = 'next'
             elif choice == 'B' or choice.lower() == 'b':
-                print(Fore.RED + "Vous êtes déjà dans le menu principal.")
+                print(Fore.RED + "You are already in the main menu.")
             elif choice == '0':
-                print(Fore.RED + "Au revoir!")       
+                print(Fore.RED + "Goodbye!")       
                 break
             elif choice in [str(i) for i in range(1, 30)]: 
                 subprocess.run(["python", os.path.join(os.path.dirname(__file__), "spring", f"tool_{choice}.py")])
             else:
-                print(Fore.GREEN + "Choix invalide. Veuillez entrer un nombre entre 1 et 29.")            
+                print(Fore.GREEN + "Invalid choice. Please enter a number between 1 and 29.")            
 
         elif current_menu == 'next':
             display_next_menu()
-            choice = input(Fore.YELLOW + "Choisissez une option (22-29, 0 pour Back) : " + Style.RESET_ALL)
+            choice = input(Fore.YELLOW + "Choose an option (22-29, 0 for Back): " + Style.RESET_ALL)
 
             if choice == 'B' or choice.lower() == 'b':
                 current_menu = 'main'
@@ -83,7 +83,7 @@ def main():
             elif choice in [str(i) for i in range(22, 30)]:  
                 subprocess.run(["python", os.path.join(os.path.dirname(__file__), "spring", f"tool_{choice}.py")])
             else:
-                print(Fore.GREEN + "Choix invalide. Veuillez entrer un nombre entre 22 et 29.")
+                print(Fore.GREEN + "Invalid choice. Please enter a number between 22 and 29.")
 
 if __name__ == "__main__":
     main()
