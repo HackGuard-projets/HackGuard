@@ -19,7 +19,7 @@
   🔄 -> <strong>Mises à jour fréquentes</strong>.<br>
   💰 -> <strong>Entièrement gratuit</strong> pour tous.<br>
 </p>
-<img src="img/fili.png" width="49%">
+   <img src="img/R.jpg" width="49%">
 <h1>⭐・Features: </h1>
 
 <p>	
