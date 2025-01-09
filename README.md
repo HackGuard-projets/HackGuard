@@ -1,5 +1,6 @@
-<p>
   <img src="img/fili.png" width="49%">
+
+<p>
   <h3 align="center">⭐ HackGuard 1.0 (SOON)!⭐</h3>
 </p>
 
