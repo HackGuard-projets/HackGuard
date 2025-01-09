@@ -22,7 +22,7 @@
 
 <p>
 
-  <img src="img/R.png" width="49%">	
+  <img src="img/R.jpg" width="49%">	
   <h3 align="center">HackGuard vous offre une large gamme de fonctionnalités réparties en différentes catégories :</h3>
 </p>
 
