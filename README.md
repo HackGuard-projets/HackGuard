@@ -1,4 +1,4 @@
-<img align="center" src="img/HackGuard.png" width="60%">
+<img align="center" src="img/HackGuard.png" width="100%">
 
 <p>
   <h3 align="center">⭐ HackGuard 1.0 (SOON)!⭐</h3>
