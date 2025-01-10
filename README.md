@@ -1,4 +1,4 @@
-![Bannière du projet](https://discordapp.com/channels/1315015942719410206/1315016138379366482/1327305773373718662)
+<img src="img/HackGuard.png" width="49%">
 
 <p>
   <h3 align="center">⭐ HackGuard 1.0 (SOON)!⭐</h3>
