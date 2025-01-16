@@ -2,6 +2,7 @@ import requests
 import subprocess
 import socket
 import concurrent.futures
+import sys
 
 def ping_ip(ip):
     try:
@@ -85,6 +86,8 @@ def main():
     dns_ip(ip)
     info_ip(ip)
     port_ip(ip)
+
+    input("\nPress Enter to exit...")
 
 if __name__ == "__main__":
     main()
