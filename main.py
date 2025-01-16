@@ -22,8 +22,8 @@ def display_main_menu():
    │         └─────────────────┘         │              └───────┘              │            └───────────┘
    ├─ [1] Web scanner                    ├─ [9] have-i-been-pwned              ├─ [15] Password-Encrypted
    ├─ [2] Sql-Vulnerability              ├─ [10] Username-Tracker              ├─ [16] Password-Decrypted
-   ├─ [3] Website-Info-Scanner           ├─ [11] Email-Tracker                 ├─ [17] Password-Checker
-   ├─ [4] Website-Url-Scanner            ├─ [12] Email-Info                    ├─ [18] Password-Generator
+   ├─ [3] Website-Info-Scanner           ├─ [11] Email-Tracker                 ├─ [17] Password-Checker (Hs for moment..)
+   ├─ [4] Website-Url-Scanner            ├─ [12] Email-Info (No api..)         ├─ [18] Password-Generator
    ├─ [5] URL-Checker                    ├─ [13] Number-Info                   ├─ [19] Password-Generator-(Random)
    ├─ [6] Ip-Scanner                     └─ [14] Ip-Info                       ├─ [20] Search-In-DataBase
    ├─ [7] Ip-Port-Scanner                                                      ├─ [21] Ip-Generator
