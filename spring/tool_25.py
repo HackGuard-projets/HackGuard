@@ -6,35 +6,17 @@ from cryptography.hazmat.primitives import hashes
 import os
 import time
 
-
-LANGUAGE = 'fr'
-translations = {
-    'fr': {
-        'CryptMethod': 'Méthode de cryptage',
-        'PathFileEncrypt': 'Chemin du fichier à crypter',
-        'PasswdCrypt': 'Mot de passe pour le cryptage',
-        'ErrorReadFile': 'Erreur lors de la lecture du fichier',
-        'SaveFileEncrypt': 'Fichier crypté enregistré à',
-        'ErrorEncryptFile': 'Erreur lors de l\'enregistrement du fichier crypté',
-    }
-}
-
-current_language = LANGUAGE
-
-def tr(key):
-    return translations[current_language].get(key, key)
-
 def current_time_hour():
     return time.strftime("%H:%M:%S")
 
 def ErrorModule(e):
-    print(f"Erreur de module: {e}")
+    print(f"Module Error: {e}")
 
 def ErrorChoice():
-    print("Choix invalide.")
+    print("Invalid choice.")
 
 def Error(e):
-    print(f"Erreur: {e}")
+    print(f"Error: {e}")
 
 def Slow(message):
     print(message)
@@ -44,10 +26,10 @@ def Title(message):
     print(f"=== {message} ===")
 
 def Continue():
-    input("Appuyez sur Entrée pour continuer...")
+    input("Press Enter to continue...")
 
 def Reset():
-    print("Réinitialisation des paramètres...")
+    print("Resetting parameters...")
 
 Title("File Encryptor")
 
@@ -75,23 +57,21 @@ def encrypt_file(file_content, password):
     return encrypted_file_content
 
 try:
-    Slow(f"""Déchiffreur de fichiers
-    [{tr('CryptMethod')}]
-    """)
+    Slow("File Encryptor\n[Encryption Method]")
 
-    choice = input(f"{current_time_hour()} {tr('CryptMethod')} -> ")
+    choice = input(f"{current_time_hour()} Encryption Method -> ")
 
     if choice not in ['1', '01']:
         ErrorChoice()
 
-    file_path = input(f"{current_time_hour()} {tr('PathFileEncrypt')} -> ")
-    password = input(f"{current_time_hour()} {tr('PasswdCrypt')} -> ")
+    file_path = input(f"{current_time_hour()} Path to file to encrypt -> ")
+    password = input(f"{current_time_hour()} Password for encryption -> ")
 
     try:
         with open(file_path, 'rb') as file:
             file_content = file.read()
     except Exception as e:
-        print(f"{current_time_hour()} {tr('ErrorReadFile')}: {e}")
+        print(f"{current_time_hour()} Error reading file: {e}")
         raise e
 
     encrypted_content = encrypt_file(file_content, password)
@@ -105,11 +85,12 @@ try:
             with open(encrypted_file_path, 'wb') as file:
                 file.write(encrypted_content)
             
-            print(f"{current_time_hour()} {tr('SaveFileEncrypt')} {encrypted_file_path}")
+            print(f"{current_time_hour()} Encrypted file saved at {encrypted_file_path}")
         except Exception as e:
-            print(f"{current_time_hour()} {tr('ErrorEncryptFile')} {e}")
+            print(f"{current_time_hour()} Error saving encrypted file: {e}")
 
         Continue()
         Reset()
 except Exception as e:
     Error(e)
+    input("Press Enter to exit...")
