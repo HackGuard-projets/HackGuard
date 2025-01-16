@@ -73,5 +73,7 @@ def main():
     print(f"Starting password decryption for: {encrypted_password}")
     request(encrypted_password, choice, threads_number, characters_number)
 
+    input("\nPress Enter to exit...")
+
 if __name__ == "__main__":
     main()
