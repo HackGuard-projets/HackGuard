@@ -2,25 +2,24 @@ import requests
 import json
 import datetime
 
-
-LANGUAGE = 'fr' 
+LANGUAGE = 'en' 
 translations = {
-    'fr': {
-        'Username': 'Nom d\'utilisateur',
-        'Invalid': 'Invalide',
-        'Status': 'Statut',
+    'en': {
+        'Username': 'Username',
+        'Invalid': 'Invalid',
+        'Status': 'Status',
         'Robux': 'Robux',
         'Premium': 'Premium',
-        'Builders Club': 'Club des bâtisseurs',
+        'Builders Club': 'Builders Club',
         'Avatar': 'Avatar',
         'Cookie': 'Cookie',
-        'Information Recovery': 'Récupération d\'information',
-        'Continue': 'Appuyez sur Entrée pour continuer...',
-        'Error': 'Erreur',
-        'Wait': 'Veuillez patienter...',
+        'Information Recovery': 'Information Recovery',
+        'Continue': 'Press Enter to continue...',
+        'Error': 'Error',
+        'Wait': 'Please wait...',
+        'Id': 'ID'
     }
 }
-
 
 BEFORE = ""
 AFTER = ""
@@ -38,7 +37,7 @@ def main():
 
     try:
         cookie = input(f"\n{BEFORE + current_time_hour() + AFTER} {INPUT} Cookie -> {secondary}")
-        print(f"{BEFORE + current_time_hour() + AFTER} {translations[LANGUAGE]['Wait']} Information Recovery..{reset}")
+        print(f"{BEFORE + current_time_hour() + AFTER} {translations[LANGUAGE]['Wait']} {translations[LANGUAGE]['Information Recovery']}..{reset}")
         
         response = requests.get("https://www.roblox.com/mobileapi/userinfo", cookies={".ROBLOSECURITY": cookie})
         
@@ -49,8 +48,8 @@ def main():
             status = "Invalid"
             information = {}
 
-        username_roblox = information.get('User Name', "None")
-        user_id_roblox = information.get("User ID", "None")
+        username_roblox = information.get('User  Name', "None")
+        user_id_roblox = information.get("User  ID", "None")
         robux_roblox = information.get("RobuxBalance", "None")
         premium_roblox = information.get("IsPremium", "None")
         avatar_roblox = information.get("ThumbnailUrl", "None")
@@ -69,6 +68,7 @@ def main():
         input(translations[LANGUAGE]['Continue']) 
     except Exception as e:
         print(f"{translations[LANGUAGE]['Error']}: {str(e)}")
+        input(translations[LANGUAGE]['Continue'])
 
 if __name__ == "__main__":
     main()
