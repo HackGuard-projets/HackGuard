@@ -12,26 +12,29 @@ def generate_password(length, use_letters, use_digits, use_specials):
         characters += string.punctuation    
 
     if not characters:
-        raise ValueError("Vous devez sélectionner au moins un type de caractère.")
+        raise ValueError("You must select at least one type of character.")
 
     password = ''.join(random.choice(characters) for _ in range(length))
     return password
 
 def main():
     try:
-        length = int(input("Combien de caractères pour le mot de passe ? "))
+        length = int(input("How many characters for the password? "))
         
-        use_letters = input("Voulez-vous inclure des lettres ? (o/n) ").strip().lower() == 'o'
-        use_digits = input("Voulez-vous inclure des chiffres ? (o/n) ").strip().lower() == 'o'
-        use_specials = input("Voulez-vous inclure des caractères spéciaux ? (o/n) ").strip().lower() == 'o'
+        use_letters = input("Do you want to include letters? (y/n) ").strip().lower() == 'y'
+        use_digits = input("Do you want to include digits? (y/n) ").strip().lower() == 'y'
+        use_specials = input("Do you want to include special characters? (y/n) ").strip().lower() == 'y'
         
         password = generate_password(length, use_letters, use_digits, use_specials)
-        print(f"Votre mot de passe généré est : {password}")
+        print(f"Your generated password is: {password}")
 
     except ValueError as e:
-        print(f"Erreur: {e}")
+        print(f"Error: {e}")
     except Exception as e:
-        print(f"Une erreur est survenue : {e}")
+        print(f"An error occurred: {e}")
+
+
+    input("\nPress Enter to exit...")
 
 if __name__ == "__main__":
     main()
