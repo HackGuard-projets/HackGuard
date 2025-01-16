@@ -1,7 +1,6 @@
 import os
 from datetime import datetime
 
-
 LANGUAGE = 'en' 
 translations = {
     'en': {
@@ -16,7 +15,6 @@ translations = {
     }
 }
 
-
 class Color:
     YELLOW = '\033[93m'
     PRIMARY = '\033[0m'
@@ -27,7 +25,7 @@ class Color:
     WAIT = '[WAIT]'
     ERROR = '[ERROR]'
     INPUT = '[INPUT]'
-    
+
 reset = Color.AFTER
 primary = Color.PRIMARY
 secondary = Color.SECONDARY
@@ -133,8 +131,10 @@ try:
 
     except Exception as e:
         print(f"{before + current_time_hour() + after} {error} {tr('ErrorSearch')} {secondary}{e}")
+        input("Press Enter to exit...")
 
     Continue()
     Reset()
 except Exception as e:
     Error(e)
+    input("Press Enter to exit...")
