@@ -5,6 +5,7 @@ import sys
 def load_common_passwords(file_path):
     if not os.path.exists(file_path):
         print(f"Error: File {file_path} does not exist.")
+        input("Press Enter to exit...")
         sys.exit(1)
     with open(file_path, 'r') as file:
         common_passwords = file.read().splitlines()
@@ -13,6 +14,7 @@ def load_common_passwords(file_path):
 def load_dictionary(file_path):
     if not os.path.exists(file_path):
         print(f"Error: File {file_path} does not exist.")
+        input("Press Enter to exit...")
         sys.exit(1)
     with open(file_path, 'r') as file:
         dictionary_words = file.read().splitlines()
@@ -102,21 +104,19 @@ def display_progress_bar(percentage):
     filled_length = int(bar_length * percentage // 100)
     
     if percentage < 20:
-        color = '\033[91m'  # Red
+        color = '\033[91m' 
     elif percentage < 50:
-        color = '\033[93m'  # Orange
+        color = '\033[93m' 
     else:
-        color = '\033[92m'  # Green
-    
+        color = '\033[92m' 
     bar = '█' * filled_length + '-' * (bar_length - filled_length)
     return f'{color}|{bar}| {percentage:.0f}%\033[0m'
 
 def main():
-    # Default file paths
     default_common_passwords_file = 'common_passwords.txt'
     default_dictionary_file = 'dictionary.txt'
     
-    common_passwords_file = sys.argv[1] if len(sys.argv) > 1 else default_common_passwords_file
+    common_passwords_file = sys.argv[1] if len(sys.argv) >  1 else default_common_passwords_file
     dictionary_file = sys.argv[2] if len(sys.argv) > 2 else default_dictionary_file
     
     common_passwords = load_common_passwords(common_passwords_file)
@@ -132,6 +132,8 @@ def main():
     print("\nEstimated Time to Crack:")
     for unit, time in time_to_crack.items():
         print(f"{unit.capitalize()}: {time:.2e}")
+
+    input("\nPress Enter to exit...")
 
 if __name__ == "__main__":
     main()
