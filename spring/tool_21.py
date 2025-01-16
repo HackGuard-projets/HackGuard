@@ -71,7 +71,7 @@ def request(webhook_url, username_webhook, avatar_webhook, color_webhook, thread
         thread.join()
 
 if __name__ == "__main__":
-    print("Ip Generator")
+    print("IP Generator")
 
     webhook = input("Webhook (y/n)? -> ")
     webhook_url = None
@@ -83,5 +83,9 @@ if __name__ == "__main__":
     avatar_webhook = "YourWebhookAvatarURL"   
     color_webhook = 0x00FF00   
 
-    while True:
-        request(webhook_url, username_webhook, avatar_webhook, color_webhook, threads_number)
+    try:
+        while True:
+            request(webhook_url, username_webhook, avatar_webhook, color_webhook, threads_number)
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        input("Press Enter to exit...")
