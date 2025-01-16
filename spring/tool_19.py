@@ -1,15 +1,16 @@
 import random
 import string
 
-def generer_mot_de_passe(longueur=12):
-
-    caracteres = string.ascii_letters + string.digits + string.punctuation
+def generate_password(length=12):
+    characters = string.ascii_letters + string.digits + string.punctuation
     
-
-    mot_de_passe = ''.join(random.choice(caracteres) for _ in range(longueur))
+    password = ''.join(random.choice(characters) for _ in range(length))
     
-    return mot_de_passe
+    return password
 
 
-mot_de_passe = generer_mot_de_passe()
-print(f"Votre mot de passe aléatoire est : {mot_de_passe}")
+password = generate_password()
+print(f"Your random password is: {password}")
+
+
+input("\nPress Enter to exit...")
