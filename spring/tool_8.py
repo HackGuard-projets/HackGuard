@@ -31,9 +31,9 @@ def request(hostname, port, bytes, threads_number):
         thread.join()
 
 if __name__ == "__main__":
-    print("Ip Pinger")
+    print("IP Pinger")
 
-    hostname = input("Ip -> ")
+    hostname = input("IP -> ")
     port_input = input("Port (enter for default) -> ")
     port = int(port_input) if port_input.strip() else 80
 
@@ -45,3 +45,7 @@ if __name__ == "__main__":
 
     while True:
         request(hostname, port, bytes, threads_number)
+        if input("Press Enter to ping again or type 'exit' to quit: ").strip().lower() == 'exit':
+            break
+
+    input("\nPress Enter to exit...")
