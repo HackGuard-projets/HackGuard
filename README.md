@@ -18,80 +18,78 @@
   <h3 align="center">HackGuard vous offre une large gamme de fonctionnalités réparties en différentes catégories :</h3>
 </p>
 
-```
-┌ Paramètres et Informations
-│
-├ Scan et Vérification
-│
-├ Informations sur les IP et Réseaux
-│
-├ Vulnérabilité et Sécurité
-│
-├ Suivi d'Informations (Osint)
-│
-├ Gestion des Mots de Passe
-│
-├ Fonctionnalités Discord
-│
-├ Fonctionnalités Roblox
-│
-├ Chiffrement, Décryptage et Conversion de Fichiers
-│
-├ Téléchargements et Génération de Contenu
-│
-├ Techniques de Dissimilation et Analyse de Métadonnées
-│
-└ Divers autres tools
-```
+# Fonctions principales
 
-<h1>⚙️・Fonctions principales :</h1>
+## Paramètres et Informations
 
-```
-┌── ⚒️ - HackGuard
-│   ├── Settings
-│   ├── Tool-Info
-│   └── Tool-Websites(soon)
-│
-├── 🕵️‍♂️ - Network Scanner
-│   ├── Sql-Vulnerability
-│   ├── Website-Info-Scanner
-│   ├── Website-Url-Scanner
-│   ├── URL-Checker
-│   ├── Ip-Scanner
-│   ├── Ip-Port-Scanner
-│   └── Ip-Pinger
-│
-├── 🔎 - Osint
-│   ├── have-i-been-pwned
-│   ├── Username-Tracker
-│   ├── Email-Tracker
-│   ├── Email-Info
-│   ├── Number-Info
-│   └── Ip-Info
-│
-├── 🔧 - Utilities
-│   ├── Password-Encrypted
-│   ├── Password-Decrypted
-│   ├── Password-Checker
-│   ├── Password-Generator
-│   ├── Password-Generator-(Random)
-│   ├── Search-In-DataBase
-│   └── Ip-Generator
-│
-├── 🎮 - Roblox Tools
-│   ├── Roblox-Cookie-Info
-│   ├── Roblox-User-Info
-│   └── Roblox-Id-Info
-│
-├── 🗂️ - File Tools
-│   ├── File-Encryptor
-│   ├── File-Decryptor
-│   ├── File-Converter
-│   └── File-Scanner
-│
-│
-└── 💻 - System Tools
-    └── Get-Your-Ip
+## Scan et Vérification
+
+## Informations sur les IP et Réseaux
+
+## Vulnérabilité et Sécurité
+
+## Suivi d'Informations (Osint)
+
+## Gestion des Mots de Passe
+
+## Fonctionnalités Discord
+
+## Fonctionnalités Roblox
+
+## Chiffrement, Décryptage et Conversion de Fichiers
+
+## Téléchargements et Génération de Contenu
+
+## Techniques de Dissimilation et Analyse de Métadonnées
+
+## Divers autres outils
+
+⚙️ Fonctions principales :
+
+⚒️ HackGuard
+- Settings
+- Tool-Info
+- **Tool-Websites (à venir)**
+
+ 🕵️‍♂️ Network Scanner
+- Sql-Vulnerability
+- Website-Info-Scanner
+- Website-Url-Scanner
+- URL-Checker
+- Ip-Scanner
+- Ip-Port-Scanner
+- Ip-Pinger
+
+ 🔎 Osint
+- have-i-been-pwned
+- Username-Tracker
+- Email-Tracker
+- Email-Info
+- Number-Info
+- Ip-Info
+
+🔧 Utilities
+- Password-Encrypted
+- Password-Decrypted
+- Password-Checker
+- Password-Generator
+- Password-Generator (Random
+- Search-In-DataBase
+- Ip-Generator
+
+ 🎮 Roblox Tools
+- Roblox-Cookie-Info
+- Roblox-User -Info
+- Roblox-Id-Info
+
+🗂️ File Tools
+- File-Encryptor
+- File-Decryptor
+- File-Converter
+- File-Scanner
+
+💻 System Tools
+- Get-Your-Ip
 
 
 ```
@@ -101,16 +99,8 @@
 ```
 Amélioration de la traduction : Perfectionnement de la traduction et personnalisation du Tool.
 Quelques Améliorations supplémentaires.
+Corrections de tout les bug, et re fonte du menu.
 ```
-
-<h1>🔒・Requirements:</h1>
-
-<h3>Windows:</h3>
-
-<p>
-- Installez <a href="https://www.python.org/downloads/">Python</a> avec les variables <a href="Img/Python_Path.png">PATH</a> .<br>
-- Windows 10 & 11 ou +
-</p>
 
 <h1>⏳・Installation:</h1>
 
@@ -132,7 +122,8 @@ Or
 <h1>⚠️・Conditions d'utilisation :</h1>
 
 <p>
-	HackGuard a été développé uniquement à des fins éducatives. Ce projet a été créé avec de bonnes intentions et est destiné à un usage personnel uniquement. En choisissant d'utiliser HackGuard, vous reconnaissez et acceptez l'entière responsabilité des conséquences pouvant résulter de vos actions.
+	HackGuard a été développé uniquement à des fins éducatives.
+        Ne pas utiliser a des fin criminelles ou malveillante !
 </p>
 
 
