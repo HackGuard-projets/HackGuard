@@ -73,7 +73,7 @@
 
 ```
 <h1>・Nouveautés :</h1>
-```
+
 
 ```
 Amélioration de la traduction : Perfectionnement de la traduction et personnalisation du Tool.
