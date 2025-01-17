@@ -17,63 +17,47 @@ def display_main_menu():
             | |  | | (_| | (__|   <| |__| | |_| | (_| | | | (_| |
             |_|  |_|\__,_|\___|_|\_\\_____|\__,_|\__,_|_|  \__,_| (By potopilo)
 
-   ┌─────────────────────────────── Network Scanner ───────────────────────────────┐
-   │ [1] Web Scanner                            [2] SQL Vulnerability              │
-   │ [3] Website Info Scanner                   [4] Website URL Scanner            │
-   │ [5] URL Checker                            [6] IP Scanner                     │
-   │ [7] IP Port Scanner                        [8] IP Pinger                      │
-   └───────────────────────────────────────────────────────────────────────────────┘
+   ┌─────────────────────────────── File and System Tools ───────────────────────────────┐
+   │ [1] File Hash Checker                     [2] Network Traffic Monitor               │
+   │ [3] Wi-Fi Scanner                         [4] Port Knocking Tool                    │
+   │ [5] DNS Lookup Tool                       [6] SSL Certificate Checker               │
+   │ [7] Malware Scanner                       [8] Social Media Scraper                  │
+   │ [9] Geolocation Tool                      [10] System Resource Monitor              │
+   └─────────────────────────────────────────────────────────────────────────────────────┘
 
-   ┌────────────────────────────────── OSINT ──────────────────────────────────────┐
-   │ [9] Have I Been Pwned                      [10] Username Tracker              │
-   │ [11] Email Tracker                         [12] Email Info (No API)           │
-   │ [13] Number Info                           [14] IP Info                       │
-   └───────────────────────────────────────────────────────────────────────────────┘
+   ┌─────────────────────────────── Network and Security Tools ──────────────────────────┐
+   │ [11] Network Speed Test                   [12] IP Geolocation API                   │
+   │ [13] Vulnerability Scanner                [14] Packet Sniffer                       │
+   │ [15] Firewall Configuration Tool          [16] Log Analyzer                         │
+   │ [17] Phishing Detection Tool              [18] Browser Fingerprinting Tool          │
+   │ [19] Credential Stuffing Tool             [20] API Testing Tool                     │
+   └─────────────────────────────────────────────────────────────────────────────────────┘
 
-   ┌─────────────────────────────── Utilities ─────────────────────────────────────┐
-   │ [15] Password Encrypted                    [16] Password Decrypted            │
-   │ [17] Password Checker (HS for now)         [18] Password Generator            │
-   │ [19] Random Password Generator             [20] Search in Database            │
-   │ [21] IP Generator                          [0] Leave the Tools                │
-   └───────────────────────────────────────────────────────────────────────────────┘
+   ┌─────────────────────────────── Data and Recovery Tools ─────────────────────────────┐
+   │ [21] Data Breach Checker                  [22] File Integrity Checker               │
+   │ [23] RAT Simulator                        [24] WAF Tester                           │
+   │ [25] Cryptography Tool                    [26] CLI Tool                             │
+   │ [27] Data Recovery Tool                   [28] Backup Tool                          │
+   │ [29] System Information Tool              [30] User Account Management Tool         │
+   └─────────────────────────────────────────────────────────────────────────────────────┘
 
-   ┌───────────────────────────────────────────────────────────────────────────────┐
-   │ Press (B) to go Back                         Press (N) for Next               │
-   └───────────────────────────────────────────────────────────────────────────────┘
+   ┌─────────────────────────────── Mapping and Intelligence Tools ──────────────────────┐
+   │ [31] Network Mapping Tool                 [32] Incident Response Tool               │
+   │ [33] Threat Intelligence Tool             [34] Web Scraper                          │
+   │ [35] Digital Forensics Tool               [36] Privacy Checker                      │
+   │ [37] Email Spoofing Tester                [38] Data Encryption Tool                 │
+   │ [39] Network Configuration Tool           [40] User Activity Monitor                │
+   └─────────────────────────────────────────────────────────────────────────────────────┘
+
+   ┌─────────────────────────────────────────────────────────────────────────────────────┐
+   │ Press (B) to go Back                                             Press (N) for Next │
+   └─────────────────────────────────────────────────────────────────────────────────────┘
 """+ Style.RESET_ALL)
 
 
 def display_next_menu():
     clear_console()
-    print(Fore.MAGENTA + r"""     
-             _    _            _     _____                     _ 
-            | |  | |          | |   / ____|                   | |
-            | |__| | __ _  ___| | _| |  __ _   _  __ _ _ __ __| |
-            |  __  |/ _` |/ __| |/ / | |_ | | | |/ _` | '__/ _` |
-            | |  | | (_| | (__|   <| |__| | |_| | (_| | | | (_| |
-            |_|  |_|\__,_|\___|_|\_\\_____|\__,_|\__,_|_|  \__,_| (By potopilo)
-
-   ┌──────────────────────────────── Roblox Tools ─────────────────────────────────┐
-   │                          [22] Roblox-Cookie-Info                              │
-   │                          [23] Roblox-User-Info                                │
-   │                          [24] Roblox-Id-Info                                  │
-   └───────────────────────────────────────────────────────────────────────────────┘
-
-   ┌─────────────────────────────── File Tools ────────────────────────────────────┐
-   │                          [25] File-Encryptor                                  │
-   │                          [26] File-Decryptor                                  │
-   │                          [27] File-Converter                                  │
-   │                          [28] File-Scanner                                    │
-   └───────────────────────────────────────────────────────────────────────────────┘
-
-   ┌───────────────────────────── System Tools ────────────────────────────────────┐
-   │                          [29] Get-Your-IP                                     │                
-   └───────────────────────────────────────────────────────────────────────────────┘
-
-   ┌───────────────────────────────────────────────────────────────────────────────┐
-   │ Press (B) to go Back                                 Press (N) for Next       │
-   └───────────────────────────────────────────────────────────────────────────────┘
- """+ Style.RESET_ALL)
+    print("No other menu for moment !")
 
 def main():
     current_menu = 'main'
@@ -81,7 +65,7 @@ def main():
     while True:
         if current_menu == 'main':
             display_main_menu()
-            choice = input(Fore.YELLOW + "Choose an option (1-21, N for Next, B for Back): " + Style.RESET_ALL)
+            choice = input(Fore.YELLOW + "Choose an option (1-40, N for Next, B for Back): " + Style.RESET_ALL)
 
             if choice == 'N' or choice.lower() == 'n':
                 current_menu = 'next'
@@ -97,7 +81,7 @@ def main():
 
         elif current_menu == 'next':
             display_next_menu()
-            choice = input(Fore.YELLOW + "Choose an option (22-29, 0 for Back): " + Style.RESET_ALL)
+            choice = input(Fore.YELLOW + "No menu (press B or b) " + Style.RESET_ALL)
 
             if choice == 'B' or choice.lower() == 'b':
                 current_menu = 'main'
