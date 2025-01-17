@@ -18,31 +18,6 @@
   <h3 align="center">HackGuard vous offre une large gamme de fonctionnalités réparties en différentes catégories :</h3>
 </p>
 
-# Fonctions principales
-
-## Paramètres et Informations
-
-## Scan et Vérification
-
-## Informations sur les IP et Réseaux
-
-## Vulnérabilité et Sécurité
-
-## Suivi d'Informations (Osint)
-
-## Gestion des Mots de Passe
-
-## Fonctionnalités Discord
-
-## Fonctionnalités Roblox
-
-## Chiffrement, Décryptage et Conversion de Fichiers
-
-## Téléchargements et Génération de Contenu
-
-## Techniques de Dissimilation et Analyse de Métadonnées
-
-## Divers autres outils
 
 ⚙️ Fonctions principales :
 
