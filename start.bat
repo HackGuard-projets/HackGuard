@@ -1,5 +1,7 @@
 @echo off
 
+pip install -r requirements.txt > nul 2>&1
+
 set /p answer=Do you want to continue (Y/N)? 
 
 if /i "%answer%"=="Y" (
