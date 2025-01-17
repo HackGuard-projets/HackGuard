@@ -3,3 +3,5 @@ hashlib
 psutil
 socket
 snscrape
+requests
+folium
