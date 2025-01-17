@@ -8,17 +8,6 @@
 
 	HackGuard est une boîte à outils polyvalente et puissante, conçue pour améliorer votre productivité en développement, gestion de projets, et sécurité informatique. Développée par potopilo, cette suite d'outils vous offre 29 fonctionnalités différentes pour simplifier vos tâches quotidiennes. Que vous soyez développeur, administrateur système ou un passionné de technologie, HackGuard est votre allié incontournable.
 
-<p>
-
-
-  👨‍💻 -> Développé en <strong>Python 3.12</strong>.<br>
-  🌍 -> Tool en <strong>English</strong>.<br>
-  💻 -> Compatible avec <strong>Windows</strong> et bientôt <strong>Linux</strong>.<br>
-  🔎 -> Pas de <strong>malware</strong> ni de <strong>backdoor</strong>.<br>
-  📂 -> <strong>Open Source</strong> garantissant l'absence de programmes malveillants.<br>
-  🔄 -> <strong>Mises à jour fréquentes</strong>.<br>
-  💰 -> <strong>Entièrement gratuit</strong> pour tous.<br>
-</p>
 <p align="center">
    <img src="img/Capture.PNG" width="49%">
    <img src="img/Capture1.PNG" width="49%">
