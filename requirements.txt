@@ -1,4 +1,2 @@
-whois
-python-whois
-phonenumbers
-bcrypt
+colorama
+hashlib
