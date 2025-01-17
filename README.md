@@ -87,7 +87,7 @@ Or
 3 - Écrivez "cd HackGuard".
 4 - Écrivez "python main.py".
 
-(Les module sont a installer manuelement).
+(Les modules sont a installer manuelement).
 ```
 </p>
 
