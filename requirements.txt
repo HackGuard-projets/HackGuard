@@ -2,3 +2,4 @@ colorama
 hashlib
 psutil
 socket
+dnspython
