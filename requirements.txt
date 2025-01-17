@@ -1,2 +1,3 @@
 colorama
 hashlib
+psutil
