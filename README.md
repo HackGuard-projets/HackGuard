@@ -19,8 +19,8 @@
   🔄 -> <strong>Mises à jour fréquentes</strong>.<br>
   💰 -> <strong>Entièrement gratuit</strong> pour tous.<br>
 </p>
-   <img src="img/Capture1.PNG" width="49%">
    <img src="img/Capture.PNG" width="49%">
+   <img src="img/Capture1.PNG" width="49%">
 <h1>⭐・Features: </h1>
 
 <p>	
