@@ -5,3 +5,4 @@ socket
 snscrape
 requests
 folium
+prettytable
