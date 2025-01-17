@@ -127,17 +127,14 @@ Quelques Améliorations supplémentaires.
  
  <p>
   
-```
-1 - Téléchargez "HackGuard".zip.
-2 - Décompressez le dossier.
-3 - Lancez "Setup.bat" ou "Setup.py".
-```
 Or
 ```
 1 - Ouvrez un terminal.
 2 - Écrivez git clone https://github.com/HackGuard-projets/HackGuard.git.
 3 - Écrivez "cd HackGuard".
-4 - Écrivez "python Setup.py".
+4 - Écrivez "python main.py".
+
+(Les module sont a installer manuelement).
 ```
 </p>
 
