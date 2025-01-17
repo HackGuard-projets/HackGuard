@@ -6,3 +6,4 @@ snscrape
 requests
 folium
 prettytable
+tqdm
