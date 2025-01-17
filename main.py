@@ -10,24 +10,36 @@ def clear_console():
 def display_main_menu():
     clear_console()
     print(Fore.MAGENTA + r"""
-                                      _    _            _     _____                     _ 
-                                     | |  | |          | |   / ____|                   | |
-                                     | |__| | __ _  ___| | _| |  __ _   _  __ _ _ __ __| |
-                                     |  __  |/ _` |/ __| |/ / | |_ | | | |/ _` | '__/ _` |
-                                     | |  | | (_| | (__|   <| |__| | |_| | (_| | | | (_| |
-                                     |_|  |_|\__,_|\___|_|\_\\_____|\__,_|\__,_|_|  \__,_|(By potopilo)
- 
- ├─ Back  (B)┌─────────────────┐                        ┌───────┐                           ┌───────────┐   Next (N) │
- └─┬─────────┤ Network Scanner ├─────────┬──────────────┤ Osint ├──────────────┬────────────┤ Utilities ├────────────┴─
-   │         └─────────────────┘         │              └───────┘              │            └───────────┘
-   ├─ [1] Web scanner                    ├─ [9] have-i-been-pwned              ├─ [15] Password-Encrypted
-   ├─ [2] Sql-Vulnerability              ├─ [10] Username-Tracker              ├─ [16] Password-Decrypted
-   ├─ [3] Website-Info-Scanner           ├─ [11] Email-Tracker                 ├─ [17] Password-Checker (Hs for moment..)
-   ├─ [4] Website-Url-Scanner            ├─ [12] Email-Info (No api..)         ├─ [18] Password-Generator
-   ├─ [5] URL-Checker                    ├─ [13] Number-Info                   ├─ [19] Password-Generator-(Random)
-   ├─ [6] Ip-Scanner                     └─ [14] Ip-Info                       ├─ [20] Search-In-DataBase
-   ├─ [7] Ip-Port-Scanner                                                      ├─ [21] Ip-Generator
-   └─ [8] Ip-Pinger                                                            └─ [0] Leave the tools
+             _    _            _     _____                     _ 
+            | |  | |          | |   / ____|                   | |
+            | |__| | __ _  ___| | _| |  __ _   _  __ _ _ __ __| |
+            |  __  |/ _` |/ __| |/ / | |_ | | | |/ _` | '__/ _` |
+            | |  | | (_| | (__|   <| |__| | |_| | (_| | | | (_| |
+            |_|  |_|\__,_|\___|_|\_\\_____|\__,_|\__,_|_|  \__,_| (By potopilo)
+
+   ┌─────────────────────────────── Network Scanner ───────────────────────────────┐
+   │ [1] Web Scanner                            [2] SQL Vulnerability              │
+   │ [3] Website Info Scanner                   [4] Website URL Scanner            │
+   │ [5] URL Checker                            [6] IP Scanner                     │
+   │ [7] IP Port Scanner                        [8] IP Pinger                      │
+   └───────────────────────────────────────────────────────────────────────────────┘
+
+   ┌────────────────────────────────── OSINT ──────────────────────────────────────┐
+   │ [9] Have I Been Pwned                      [10] Username Tracker              │
+   │ [11] Email Tracker                         [12] Email Info (No API)           │
+   │ [13] Number Info                           [14] IP Info                       │
+   └───────────────────────────────────────────────────────────────────────────────┘
+
+   ┌─────────────────────────────── Utilities ─────────────────────────────────────┐
+   │ [15] Password Encrypted                    [16] Password Decrypted            │
+   │ [17] Password Checker (HS for now)         [18] Password Generator            │
+   │ [19] Random Password Generator             [20] Search in Database            │
+   │ [21] IP Generator                          [0] Leave the Tools                │
+   └───────────────────────────────────────────────────────────────────────────────┘
+
+   ┌───────────────────────────────────────────────────────────────────────────────┐
+   │ Press (B) to go Back                         Press (N) for Next               │
+   └───────────────────────────────────────────────────────────────────────────────┘
 """+ Style.RESET_ALL)
 
 
@@ -59,7 +71,7 @@ def display_next_menu():
    └───────────────────────────────────────────────────────────────────────────────┘
 
    ┌───────────────────────────────────────────────────────────────────────────────┐
-   │ Press (B) to go Back                         Press (N) for Next               │
+   │ Press (B) to go Back                                 Press (N) for Next       │
    └───────────────────────────────────────────────────────────────────────────────┘
  """+ Style.RESET_ALL)
 
