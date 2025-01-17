@@ -70,9 +70,8 @@
 <h1>・Nouveautés :</h1>
 
 ```
-Amélioration de la traduction : Perfectionnement de la traduction et personnalisation du Tool.
-Quelques Améliorations supplémentaires.
-Corrections de tout les bug, et re fonte du menu.
+-Amélioration de la traduction : Perfectionnement de la traduction et personnalisation du Tool.
+-Corrections de tout les bug, et re fonte du menu.
 ```
 
 <h1>⏳・Installation:</h1>
