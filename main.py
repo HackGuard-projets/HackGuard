@@ -9,7 +9,7 @@ def clear_console():
 
 def display_main_menu():
     clear_console()
-    print(Fore.MAGENTA + r"""
+    print(Fore.BLUE + r"""
              _    _            _     _____                     _ 
             | |  | |          | |   / ____|                   | |
             | |__| | __ _  ___| | _| |  __ _   _  __ _ _ __ __| |
