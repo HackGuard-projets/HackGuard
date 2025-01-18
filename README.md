@@ -19,52 +19,55 @@
 </p>
 
 
-⚙️ Fonctions principales :
+### ⚙️ Fonctions principales :
 
-⚒️ HackGuard
-- Settings
-- Tool-Info
-- **Tool-Websites (à venir)**
+#### 🗂️ File and System Tools
+- File-Hash-Checker
+- Network-Traffic-Monitor
+- Wi-Fi-Scanner
+- Port-Knocking-Tool
+- DNS-Lookup-Tool
+- SSL-Certificate-Checker
+- Malware-Scanner
+- Social-Media-Scraper
+- Geolocation-Tool
+- System-Resource-Monitor
 
- 🕵️‍♂️ Network Scanner
-- Sql-Vulnerability
-- Website-Info-Scanner
-- Website-Url-Scanner
-- URL-Checker
-- Ip-Scanner
-- Ip-Port-Scanner
-- Ip-Pinger
+#### 🕵️‍♂️ Network and Security Tools
+- Network-Speed-Test
+- IP-Geolocation-API
+- Vulnerability-Scanner
+- Packet-Sniffer
+- Firewall-Configuration-Tool
+- Log-Analyzer
+- Phishing-Detection-Tool
+- Browser-Fingerprinting-Tool
+- Credential-Stuffing-Tool
+- API-Testing-Tool
 
- 🔎 Osint
-- have-i-been-pwned
-- Username-Tracker
-- Email-Tracker
-- Email-Info
-- Number-Info
-- Ip-Info
+#### 🔎 Data and Recovery Tools
+- Data-Breach-Checker
+- File-Integrity-Checker
+- RAT-Simulator
+- WAF-Tester
+- Cryptography-Tool
+- CLI-Tool
+- Data-Recovery-Tool
+- Backup-Tool
+- System-Information-Tool
+- User-Account-Management-Tool
 
-🔧 Utilities
-- Password-Encrypted
-- Password-Decrypted
-- Password-Checker
-- Password-Generator
-- Password-Generator (Random
-- Search-In-DataBase
-- Ip-Generator
-
- 🎮 Roblox Tools
-- Roblox-Cookie-Info
-- Roblox-User -Info
-- Roblox-Id-Info
-
-🗂️ File Tools
-- File-Encryptor
-- File-Decryptor
-- File-Converter
-- File-Scanner
-
-💻 System Tools
-- Get-Your-Ip
+#### 🗺️ Mapping and Intelligence Tools
+- Network-Mapping-Tool
+- Incident-Response-Tool
+- Threat-Intelligence-Tool
+- Web-Scraper
+- Digital-Forensics-Tool
+- Privacy-Checker
+- Email-Spoofing-Tester
+- Data-Encryption-Tool
+- Network-Configuration-Tool
+- User-Activity-Monitor
 
 
 <h1>・Nouveautés :</h1>
