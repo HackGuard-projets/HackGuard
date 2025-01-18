@@ -9,7 +9,7 @@
 	HackGuard est une boîte à outils polyvalente et puissante, conçue pour améliorer votre productivité en développement, gestion de projets, et sécurité informatique. Développée par potopilo, cette suite d'outils vous offre 40 fonctionnalités différentes pour simplifier vos tâches quotidiennes. Que vous soyez développeur, administrateur système ou un passionné de technologie, HackGuard est votre allié incontournable.
 
 <p align="center">
-   <img src="img/Capture.jpg" width="49%">
+   <img src="img/Capture.JPEG" width="49%">
 </p>
 <h1>⭐・Features: </h1>
 
