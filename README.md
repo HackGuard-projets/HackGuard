@@ -10,6 +10,7 @@
 
 <p align="center">
    <img src="img/123.JPG" width="49%">
+   <img src="img/1234.JPG" width="49%">	
 </p>
 <h1>⭐・Features: </h1>
 
